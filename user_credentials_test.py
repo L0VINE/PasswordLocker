@@ -13,3 +13,11 @@ class TestUser(unittest.TestCase):
 		Function to create a user account before each test
 		'''
 		self.new_user = User('Mary','Ng\'ang\'a','pswd100')
+
+        def test__init__(self):
+		'''
+		Test to if check the initialization/creation of user instances is properly done
+		'''
+		self.assertEqual(self.new_user.first_name,'Mary')
+		self.assertEqual(self.new_user.last_name,'Ng\'ang\'a')
+		self.assertEqual(self.new_user.password,'pswd100')
