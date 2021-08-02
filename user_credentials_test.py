@@ -117,3 +117,7 @@ def test_copy_credential(self):
 		Credential.copy_credential(self.new_credential.site_name)
 		self.assertEqual('pswd100',pyperclip.paste())
 		print(pyperclip.paste())
+
+
+if __name__ == '__main__':
+	unittest.main(verbosity=2)
