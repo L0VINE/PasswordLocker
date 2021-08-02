@@ -1,3 +1,5 @@
+
+#! /usr/bin/env python3
 import pyperclip
 from user_credentials import User, Credential
 
@@ -75,8 +77,7 @@ def main():
 			save_user(create_user(first_name,last_name,password))
 			print(" ")
 			print(f'New Account Created for: {first_name} {last_name} using password: {password}')
-		
-        elif short_code == 'li':
+		elif short_code == 'li':
 			print("-"*60)
 			print(' ')
 			print('To login, enter your account details:')
@@ -96,8 +97,7 @@ def main():
 						print(" ")
 						print(f'Goodbye {user_name}')
 						break
-
-                    elif short_code == 'cc':
+					elif short_code == 'cc':
 						print(' ')
 						print('Enter your credential details:')
 						site_name = input('Enter the site\'s name- ').strip()
